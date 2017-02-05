@@ -40,10 +40,11 @@ article {
     width: 100%;
     position: relative;
     height: 80vh;
+    z-index: -1000;
 }
 
-.hero{
-  position: absolute;
+.hero {
+  position: relative;
   top: 50%;
   text-align: left;
   width: 100%;
@@ -66,5 +67,27 @@ article {
   @include col(3, 3);
 }
 
+nav.main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
 
-@import "minima";
+nav.main-nav li,
+nav.main-nav a {
+	display: inline-block;
+}
+
+nav.main-nav li a {
+	padding: 10px;
+}
+
+a.active {
+	color: #FFE000;
+}
+
+
+
+@import
+  "minima";
