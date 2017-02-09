@@ -52,6 +52,19 @@
       </article>
     </div>
 
+    <div class="cases">
+      {% for case-study in site.case-studies %}
+        <div class="case-studies">
+          <div class="study">
+            <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
+            <h2><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+            <p>{{ case-study.preview }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+
 
     {% include footer.html %}
 

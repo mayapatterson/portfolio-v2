@@ -1,11 +1,15 @@
 ---
-layout: page
+layout: collection
 title: Case Studies
 navigation_weight: 3
 ---
 
 {% for case-study in site.case-studies %}
   <div class="case-studies">
-    <h2><img src="{{ case-study.image_path }}" alt="{{ case-study.title }}"><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+    <div class="study">
+      <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
+      <h2><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+      <p>{{ case-study.preview }}</p>
+    </div>
   </div>
 {% endfor %}

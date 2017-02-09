@@ -2,6 +2,7 @@
 layout: page
 title: Onboarding
 image_path: /images/illustrations.png
+preview: This is a test
 ---
 
 **Product background**

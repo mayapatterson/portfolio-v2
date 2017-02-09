@@ -2,6 +2,7 @@
 layout: page
 title: Pinterest
 image_path: /images/illustrations.png
+preview: this is another test
 ---
 
 **Product background**
