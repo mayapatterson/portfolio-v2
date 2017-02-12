@@ -35,3 +35,5 @@ exclude:
 collections:
   case-studies:
     output: true
+sass:
+    sass_dir: _sass

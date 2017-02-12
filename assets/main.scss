@@ -1,6 +1,32 @@
 ---
 ---
 
+// Define defaults for each variable.
+$base-font-family: "Roboto", sans-serif !default;
+$base-font-family: "Fjalla One", sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #F1D3D3 !default;
+$accent-color:     #1539CF !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    1024px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+
 // Make sure you have this in your styles
 // because grid is using paddings
 *, *:before, *:after {
@@ -44,23 +70,45 @@ article {
 .container {
     background: url("/images/Maya.JPG") center no-repeat;
     background-size: cover;
+    background-position: 50px 0px center;
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 95vh;
     z-index: -1000;
 }
 
 .hero {
   position: relative;
-  top: 50%;
-  text-align: left;
-  width: 100%;
+  top: 60vh;
+  text-align: center;
   color: #fff;
-  font-size: 36px;
   -ms-transform: translate(0,-50%); /* IE 9 */
     -webkit-transform: translate(0,-50%); /* Safari */
     transform: translate(0,-50%);
+
+  @media only screen and (min-width: 768px) {
+    left: -10vw;
+    text-align: left;
+    width: 75%;
+  }
+
+  h1 {
+      font-family: "Fjalla One";
+      font-size: 50px;
+      color: $brand-color;
+  }
+  p {
+      font-family: "Roboto";
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 36px;
+  }
+  .emphasis {
+    font-weight: 400;
+    color: $brand-color;
+  }
 }
+
 
 .features, .container {
   @include row;
@@ -72,6 +120,10 @@ article {
 
 .hero {
   @include col(3, 3);
+
+  @media only screen and (min-width: 768px){
+    @include col(2,3);
+  }
 }
 
 nav.main-nav ul {
@@ -85,9 +137,20 @@ nav.main-nav li,
 nav.main-nav a {
 	display: inline-block;
 }
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
 
 nav.main-nav li a {
-	padding: 10px;
+  padding: 15px 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: 10px;
+  }
 }
 
 a.active {
@@ -135,7 +198,6 @@ a.active {
   padding-left: 10px;
   padding-bottom: 30px;
 }
-
 
 @import
   "minima";
