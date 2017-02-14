@@ -3,20 +3,22 @@
 
 // Define defaults for each variable.
 $base-font-family: "Roboto", sans-serif !default;
-$base-font-family: "Fjalla One", sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$header-font-family: "Fjalla One", sans-serif !default;
+$h1-font-size: 45px;
+
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
+$text-color:       #171414 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #F1D3D3 !default;
 $accent-color:     #1539CF !default;
 
-$grey-color:       #828282 !default;
+$grey-color:       #E9E9E9 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
@@ -63,11 +65,9 @@ $on-laptop:        800px !default;
   align-items: center;
 }
 
-article {
-  color: purple;
-}
 
-.container {
+
+.container-hero {
     background: url("/images/Maya.JPG") center no-repeat;
     background-size: cover;
     background-position: 50px 0px center;
@@ -75,6 +75,39 @@ article {
     position: relative;
     height: 95vh;
     z-index: -1000;
+}
+
+.container {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.callout {
+  background: url("/images/cream_pixels.png");
+  height: 60vh;
+}
+
+.blurb {
+  padding: 40px 30px;
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+
+  @media only screen and (max-width: 375px) {
+    width: 100%;
+    top: 10%;
+  }
+
+  h1 {
+    font-family: $header-font-family;
+    font-size: $h1-font-size;
+  }
+
+  p {
+    font-family: $base-font-family;
+  }
 }
 
 .hero {
@@ -94,8 +127,9 @@ article {
 
   h1 {
       font-family: "Fjalla One";
-      font-size: 50px;
+      font-size: 80px;
       color: $brand-color;
+      margin-bottom: 0;
   }
   p {
       font-family: "Roboto";
@@ -103,12 +137,11 @@ article {
       font-weight: 300;
       line-height: 36px;
   }
-  .emphasis {
-    font-weight: 400;
-    color: $brand-color;
-  }
 }
-
+.emphasis {
+  font-weight: 400;
+  color: $brand-color;
+}
 
 .features, .container {
   @include row;
@@ -154,13 +187,15 @@ nav.main-nav li a {
 }
 
 a.active {
-	color: #FFE000;
+	color: $accent-color;
 }
 
 .cases {
   @include row;
-  background-color: purple;
+  background-color: $grey-color;
   height: 100%;
+  border-radius: 4px;
+  padding: 50px 0;
 
   @media only screen and (min-width: 768px) {
     width: 90vw;
@@ -181,7 +216,7 @@ a.active {
 }
 
 .study {
-  background-color: red;
+  background-color: $background-color;
   position: relative;
   border-radius: 4px;
 }

@@ -30,38 +30,31 @@
 
           </div>
 
-    <div class="container">
+    <div class="container-hero">
       <div class="hero">
-        <h1>Hey, what's up, hello...</h1>
-        <p>My name is <span class="emphasis">Maya Patterson</span>, a Product Designer creating experiences that solve human needs</p>
+        <h1>Maya Patterson</h1>
       </div>
     </div>
 
-    <div class="features">
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
-      </article>
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
-      </article>
-      <article>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aperiam consectetur quasi ratione quas assumenda accusamus sapiente exercitationem suscipit distinctio ipsum excepturi dolorum sint cum hic illo mollitia asperiores unde?</p>
-      </article>
+
+    <div class="callout">
+      <div class="blurb">
+        <h1>I'm a <span class="emphasis">Product Designer</span> who creates digital experiences that solve human needs</h1>
+      </div>
     </div>
 
-    <div class="cases">
-      {% for case-study in site.case-studies %}
-        <div class="case-studies">
-          <div class="study">
-            <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
-            <h2><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
-            <p>{{ case-study.preview }}</p>
+    <div class="container">
+      <div class="cases">
+        {% for case-study in site.case-studies %}
+          <div class="case-studies">
+            <div class="study">
+              <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
+              <h2><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
+              <p>{{ case-study.preview }}</p>
+            </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
 
 
