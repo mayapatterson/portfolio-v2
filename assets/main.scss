@@ -9,7 +9,11 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $header-font-family: "Fjalla One", sans-serif !default;
-$h1-font-size: 45px;
+$h1-font-size: 48px;
+$h1-line-height: 68px;
+$subheader-font-family: "Roboto", sans-serif !default;
+$h2-font-size: 24px;
+$h2-line-height: 32px;
 
 $spacing-unit:     30px !default;
 
@@ -28,6 +32,49 @@ $content-width:    1024px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+ // This is mixin which you will include in parent
+ // of columns. It kills default margin of inline-block
+ // elements.
+ @mixin row () {
+   font-size: 0;
+   position: relative;
+ }
+
+ // This is column mixins.
+ @mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+     width: percentage($col/$sum);
+     display: inline-block;
+     font-size: 16px;
+     padding-left: if($first, 0, $gap);
+     padding-right: if($last, 0, $gap);
+
+     @media only screen and (min-width: 768px) {
+             width: percentage($col/$sum);
+             vertical-align: $align;
+     }
+ }
+
+ @mixin center-children {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+
 
 // Make sure you have this in your styles
 // because grid is using paddings
@@ -37,33 +84,6 @@ $on-laptop:        800px !default;
   box-sizing: border-box;
 }
 
-// This is mixin which you will include in parent
-// of columns. It kills default margin of inline-block
-// elements.
-@mixin row () {
-  font-size: 0;
-  position: relative;
-}
-
-// This is column mixins.
-@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
-    width: percentage($col/$sum);
-    display: inline-block;
-    font-size: 16px;
-    padding-left: if($first, 0, $gap);
-    padding-right: if($last, 0, $gap);
-
-    @media only screen and (min-width: 768px) {
-            width: percentage($col/$sum);
-            vertical-align: $align;
-    }
-}
-
-@mixin center-children {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
@@ -103,6 +123,7 @@ $on-laptop:        800px !default;
   h1 {
     font-family: $header-font-family;
     font-size: $h1-font-size;
+    color: $grey-color-dark;
   }
 
   p {
@@ -140,7 +161,8 @@ $on-laptop:        800px !default;
 }
 .emphasis {
   font-weight: 400;
-  color: $brand-color;
+  // text-decoration: underline;
+  color: $text-color;
 }
 
 .features, .container {
@@ -181,14 +203,20 @@ nav.main-nav a {
 nav.main-nav li a {
   padding: 15px 0;
 
+  &:hover{
+    color: $accent-color;
+    text-decoration: line-through;
+  }
+
   @media only screen and (min-width: 768px) {
     padding: 10px;
   }
 }
 
 a.active {
-	color: $accent-color;
+	color: $grey-color-dark;
 }
+
 
 .cases {
   @include row;
@@ -234,5 +262,24 @@ a.active {
   padding-bottom: 30px;
 }
 
+.post-title {
+  font-family: $header-font-family;
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+
+  @include media-query($on-palm) {
+    font-size: 36px;
+  }
+}
+
+.time {
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+  color: $grey-color-dark;
+}
+
 @import
-  "minima";
+  "components/base",
+  "components/layout",
+  "components/syntax-highlighting"
+;

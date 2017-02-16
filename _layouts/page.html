@@ -11,16 +11,19 @@
   {% include header.html %}
   <div class="wrapper">
     <header class="page-header">
-      <h1 class="post-title">{{ page.title | escape }}</h1>
-    </header>
-    
-    <article class="page">
+      <div class="title">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+        <h2 class="post-sub-title">{{ page.preview }}</h2>
+        <p class="time">{{ page.time }}</p>
 
+      </div>
+    </header>
+
+    <div class="page">
       <div class="page-content">
         {{ content }}
       </div>
-
-    </article>
+    </div>
   </div>
 
 </body>

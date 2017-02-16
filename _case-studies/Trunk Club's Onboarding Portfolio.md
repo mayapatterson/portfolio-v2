@@ -1,58 +1,32 @@
 ---
 layout: page
-title: Work
-permalink: /work/
-navigation_weight: 1
+title: Redesigning Trunk Club's Onboarding Experience
+image_path: /images/illustrations.png
+preview: How we improved Trunk Club's user experience for first time customers and increased conversion through a sign-up redesign.
+time: 8 min read
 ---
 
 
-## Trunk Club's Onboarding##
 
-(8 min read)
-
-How we improved Trunk Club's user experience for first time customers, gathered more information about our customers to better service them, and significantly increased our member conversion through a sign-up redesign.
+![onboardingHero](/images/onboardingHero.png)
 
 
 
-**The team**
+
+
+## Problem
+
+Trunk Club recognized we needed to do a better job at getting our new users onboarded onto our service. We were not meeting user's expectations during the sign-up funnel, which meant important metrics like account creation and member conversion were greatly suffering.
+
+
+
+## The team
 
 I served as design lead on a team of front and back-end developers, two PMs, and a few designers.
 
-**Probably take out this section **
+![old_womens_flow](/images/oldOnboardingFlows.png)
 
-- Redefinition of what "conversion" means to Trunk Club
-- Design-driven and highly collaborative process
-- Bot testing
-- Framer prototyping
-- Rebuild of entire onboarding application
-
-
-
-**This section might not be necessary if the mocks show it Platforms**
-
-- Mobile web
-- Desktop
-- iOS *in progress*
-
-
-
-**Design process**
-
-1. Problem defintion and goal setting
-2. User research and strategy
-3. Exploratory ideation
-4. Rapid prototyping
-5. User testing
-6. Design refinement
-7. Implementation and development support
-8. A/B testing
-9. Learning, refining, and iterating
-
-**Problem**
-
-Trunk Club recognized we needed to do a better job at getting our new users onboarded with the TC service. We were not meeting user's expectations during the funnel, which meant important metrics like account creation and member conversion were greatly suffering.
-
-**Product background**
+## Product background
 
 Our service relies on getting new users through our onboarding funnel and getting them connected to their Trunk Club stylist. Our onboarding process wasn't supporting this need.
 
@@ -62,7 +36,7 @@ We understood that redesigning and rebuilding the entire onboarding experience f
 
 
 
-**Important metrics**
+## Important metrics
 
 - Conversion - turning new leads into customers
 - Connection rate - connecting new leads to their assigned stylist
@@ -71,11 +45,10 @@ We understood that redesigning and rebuilding the entire onboarding experience f
 
 
 
-**User research 1.0**
 
-We began by hosting user research sessions to understand how our users felt about the current onboarding flow. A mix of designers, developers, and product managers were involved in the session. We recruited participants to come into our office and test out our onboarding flow.
+## User research 1.0
 
-Here's what we learned:
+We began by hosting user research sessions to understand how our users felt about the current onboarding flow. A mix of designers, developers, and product managers were involved in the session. We recruited participants to come into our office and test out our onboarding flow. Here's what we learned:
 
 - Our users had no idea that they would be connected to a stylist, a real person, at the end of onboarding.
 - Users didn't yet trust that their stylist was right for them
@@ -85,7 +58,7 @@ Here's what we learned:
 
 
 
-**User research part 1.1**
+**User research with our stylists**
 
 Trunk Club has hundreds of stylists powering our service. We interviewed five stylists to understand how they were using new lead's onboarding information. This would help inform what bits of information we might need to add or remove from our flow.
 

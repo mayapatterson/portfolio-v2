@@ -38,7 +38,6 @@ ul, ol, dl, figure,
 }
 
 
-
 /**
  * Images
  */
@@ -94,13 +93,13 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
+  //&:visited {
+    //color: darken($brand-color, 15%);
+  //}
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: $accent-color;
+    text-decoration: line-through;
   }
 }
 
@@ -110,7 +109,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
+  color: $grey-color-dark;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;

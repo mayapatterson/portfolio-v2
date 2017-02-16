@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Onboarding
+title: Onboarding2
 image_path: /images/illustrations.png
 preview: This is a test
 ---
