@@ -12,7 +12,7 @@
 
           <div class="wrapper-nav">
 
-            <nav class="main-nav">
+            <nav>
               <a class="site-title" href="{{ "/" | relative_url}}">Maya Patterson</a>
               <ul>
                 {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
@@ -47,11 +47,14 @@
       <div class="cases">
         {% for case-study in site.case-studies %}
           <div class="case-studies">
-            <div class="study">
-              <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
-              <h2><a href="{{ case-study.url }}">{{ case-study.title }}</a></h2>
-              <p>{{ case-study.preview }}</p>
-            </div>
+              <div class="study-image">
+                <img src="{{ case-study.image_path }}" alt="{{ case-study.title }}">
+              </div>
+              <div class="study-details">
+                <h2>{{ case-study.title }}</h2>
+                <p>{{ case-study.preview }}</p>
+                <a href="{{ case-study.url }}" class ="button hvr-underline-from-center">Read case study</a>
+              </div>
           </div>
         {% endfor %}
       </div>

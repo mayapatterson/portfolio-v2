@@ -26,6 +26,8 @@ $grey-color:       #E9E9E9 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$lightblue-color: #B8C5F9;
+
 // Width of the content area
 $content-width:    1024px !default;
 
@@ -85,7 +87,53 @@ $on-laptop:        800px !default;
 }
 
 
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: $brand-color;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
 
+.button {
+  //background-color: $accent-color;
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+  border: 2px solid $accent-color;
+  color: $accent-color;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  &:hover {
+    color: $lightblue-color;
+  }
+}
 
 .container-hero {
     background: url("/images/Maya.JPG") center no-repeat;
@@ -181,15 +229,20 @@ $on-laptop:        800px !default;
   }
 }
 
-nav.main-nav ul {
+.page-nav {
+  background: $accent-color;
+}
+
+nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+  overflow: hidden;
 	float: right;
 }
 
-nav.main-nav li,
-nav.main-nav a {
+nav li,
+nav a {
 	display: inline-block;
 }
 // Use media queries like this:
@@ -200,12 +253,14 @@ nav.main-nav a {
 //   }
 // }
 
-nav.main-nav li a {
+nav li a {
   padding: 15px 0;
+  color: $lightblue-color;
+  font-style: $subheader-font-family;
+  font-weight: 300;
 
   &:hover{
-    color: $accent-color;
-    text-decoration: line-through;
+    color: $brand-color;
   }
 
   @media only screen and (min-width: 768px) {
@@ -214,13 +269,13 @@ nav.main-nav li a {
 }
 
 a.active {
-	color: $grey-color-dark;
+	color: $brand-color;
+  text-decoration: line-through;
 }
 
 
 .cases {
   @include row;
-  background-color: $grey-color;
   height: 100%;
   border-radius: 4px;
   padding: 50px 0;
@@ -235,18 +290,32 @@ a.active {
 }
 
 .case-studies {
-  @include col(3,3);
+  @include row();
   margin-top: 20px;
+  padding-bottom: 80px;
+  @extend %clearfix;
 
-  @media only screen and (min-width: 768px) {
-          @include col(1,2);
+  @include media-query($on-palm){
+    padding-bottom: 100px;
   }
 }
 
-.study {
-  background-color: $background-color;
-  position: relative;
-  border-radius: 4px;
+
+.study-details {
+  @include col(3,8);
+  float: left;
+
+  @include media-query($on-palm){
+    @include col(8,8);
+  }
+}
+
+.study-image {
+  @include col(5,8);
+
+  @include media-query($on-palm){
+    @include col(8,8);
+  }
 }
 
 .study img {
