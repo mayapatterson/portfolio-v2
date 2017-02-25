@@ -1,80 +1,12 @@
 ---
 ---
+@import
+  "components/config",
+  "components/layout",
+  "components/base",
+  "components/navigation"
+;
 
-// Define defaults for each variable.
-$base-font-family: "Roboto", sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
-
-$header-font-family: "Fjalla One", sans-serif !default;
-$h1-font-size: 48px;
-$h1-line-height: 68px;
-$subheader-font-family: "Roboto", sans-serif !default;
-$h2-font-size: 24px;
-$h2-line-height: 32px;
-
-$spacing-unit:     30px !default;
-
-$text-color:       #171414 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #F1D3D3 !default;
-$accent-color:     #1539CF !default;
-
-$grey-color:       #E9E9E9 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
-$lightblue-color: #B8C5F9;
-
-// Width of the content area
-$content-width:    1024px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-
- // This is mixin which you will include in parent
- // of columns. It kills default margin of inline-block
- // elements.
- @mixin row () {
-   font-size: 0;
-   position: relative;
- }
-
- // This is column mixins.
- @mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
-     width: percentage($col/$sum);
-     display: inline-block;
-     font-size: 16px;
-     padding-left: if($first, 0, $gap);
-     padding-right: if($last, 0, $gap);
-
-     @media only screen and (min-width: 768px) {
-             width: percentage($col/$sum);
-             vertical-align: $align;
-     }
- }
-
- @mixin center-children {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
 
 
 
@@ -229,44 +161,7 @@ $on-laptop:        800px !default;
   }
 }
 
-.page-nav {
-  background: $accent-color;
-}
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-  overflow: hidden;
-	float: right;
-}
-
-nav li,
-nav a {
-	display: inline-block;
-}
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
-
-nav li a {
-  padding: 15px 0;
-  color: $lightblue-color;
-  font-style: $subheader-font-family;
-  font-weight: 300;
-
-  &:hover{
-    color: $brand-color;
-  }
-
-  @media only screen and (min-width: 768px) {
-    padding: 10px;
-  }
-}
 
 a.active {
 	color: $brand-color;
@@ -346,9 +241,3 @@ a.active {
   font-size: $small-font-size;
   color: $grey-color-dark;
 }
-
-@import
-  "components/base",
-  "components/layout",
-  "components/syntax-highlighting"
-;

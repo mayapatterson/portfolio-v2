@@ -1,23 +1,44 @@
-/**
- * Site header - this is a hack for home nav
- */
- .wrapper-nav {
-   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-   margin-right: auto;
-   margin-left: auto;
-   padding-right: $spacing-unit;
-   padding-left: $spacing-unit;
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
 
+// This is mixin which you will include in parent
+// of columns. It kills default margin of inline-block
+// elements.
+@mixin row () {
+  font-size: 0;
+  position: relative;
+}
 
+// This is column mixins.
+@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+    width: percentage($col/$sum);
+    display: inline-block;
+    font-size: 16px;
+    padding-left: if($first, 0, $gap);
+    padding-right: if($last, 0, $gap);
 
-   @include media-query($on-laptop) {
-     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-     padding-right: $spacing-unit / 2;
-     padding-left: $spacing-unit / 2;
-   }
- }
+    @media only screen and (min-width: 768px) {
+            width: percentage($col/$sum);
+            vertical-align: $align;
+    }
+}
+
+@mixin center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
  .wrapper {
    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -26,7 +47,7 @@
    margin-left: auto;
    //padding-right: $spacing-unit;
    //padding-left: $spacing-unit;
-   @extend %clearfix;
+   clear: both;
 
    @include media-query($on-laptop) {
      max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -36,88 +57,23 @@
    }
  }
 
+ /**
+  * Clearfix
+  */
+  %clearfix:after {
+       content: "";
+       display: table;
+       clear: both;
+     }
+
+
  .site-header {
    min-height: 56px;
 
 }
 
 
-.site-title {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
-}
-
-.site-nav {
-  float: right;
-  line-height: 56px;
-
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg path {
-        fill: $grey-color-dark;
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
-}
 
 
 

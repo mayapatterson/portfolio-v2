@@ -1,11 +1,7 @@
-<header>
 
-  <div class="wrapper page-nav">
-
-    <a class="site-title" href="{{ "/" | relative_url}}">Maya Patterson</a>
-
-    <nav class="main-nav">
-      <ul>
+    <nav class="menu">
+      <a class="site-title" href="{{ "/" | relative_url}}">Maya Patterson</a>
+      <ul class="active">
         {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
         {% for p in navigation_pages %}
           {% if p.navigation_weight %}
@@ -17,8 +13,5 @@
           {% endif %}
         {% endfor %}
       </ul>
+      <a class="toggle-nav" href="#">Menu</a>
     </nav>
-
-  </div>
-
-</header>
