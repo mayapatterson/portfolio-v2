@@ -31,13 +31,9 @@ I served as design lead on a team of front and back-end developers, two PMs, and
 
 
 
-
-
 ## Project scope
 
 Although the onboarding process doesn't end until a user's first purchase, the scope of this work focused on optimizing the experience of the sign-up process. The new experience would be implemented across all platforms (mobile web, desktop, iOS, and Android), but we focused on web first due to the large percentage of traffic on those platforms.
-
-
 
 
 ## Important metrics
@@ -65,22 +61,16 @@ We began by hosting user research sessions to understand how our users felt abou
 - Our branding and visual assets turned off our target audience
 
 
-**More insights**
-
-We also interviewed a handful of stylists to understand how they were using new user's onboarding information. We learned that they weren't using any of the information that our user's gave during sign-up 😭. Stylists felt overwhelmed by the way we presented new user information to them. This resulted in our stylists **creating another onboarding for their new leads** by sending them dense style surveys via email. This workflow is not only unproductive for stylists, but resulted in a clunky and unenjoyable experience for our users.
-
-
-
 > our goal was to create an onboarding process that resulted in a nautral handoff to a member's assigned stylist.
 
 
 
-### Focused Ideation###
+## Focused Ideation
 
 We wanted to explore broad provocative solutions, as well as near-term improvements that we could implement in the interim.
 
 
-**Near term concepts**
+### Near term concepts
 
 Based on our research we knew new users lacked trust that their stylist could serve them. They felt that there wasn't enough information collected about their style needs and preferences. We explored new flows to test different sections within the sign-up experience.
 
@@ -112,7 +102,6 @@ I partnered with a designer who built a quick HTML/CSS prototype, while I contin
 
 
 ### Findings
-
 After testing the near-term design with participants, we gained several insights:
 
 - New user's tolerance for answering more questions is higher than we expected

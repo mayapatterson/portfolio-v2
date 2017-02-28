@@ -182,11 +182,9 @@
 .page-content {
   padding: $spacing-unit 0;
   margin: 0 auto;
-  @include col(4, 5);
-}
+  @include col(3, 5);
 
-@include media-query($on-palm) {
-  .page-content{
+  @include media-query($on-palm) {
     @include col(5,5);
   }
 }
@@ -203,16 +201,16 @@
 }
 
 
-.page-content {
+//.page-content {
 
-  p {
-    padding-bottom: 10px;
-  }
+//  p {
+//    padding-bottom: 10px;
+//  }
 
-  ul {
-    padding-bottom: 30px;
-  }
-}
+//  ul {
+//    padding-bottom: 30px;
+//  }
+//}
 
 .page-heading {
   font-size: 20px;
