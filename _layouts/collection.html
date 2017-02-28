@@ -3,18 +3,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
 
 <body>
 
   {% include header.html %}
-  <div class="wrapper">
+
+
     <header class="page-header">
-      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <div class="page-header-title">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+        <p class="post-subtitle">As a Trunk Club Product Designer, I've had the pleasure of designing and shipping a wide array of features. Below is a small sample of my work.</p>
+      </div>
     </header>
 
-  </div>
+
   <div class="cases">
 
         {{ content }}

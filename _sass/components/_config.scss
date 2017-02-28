@@ -3,14 +3,18 @@ $base-font-family: "Roboto", sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.4 !default;
 
 $header-font-family: "Fjalla One", sans-serif !default;
-$h1-font-size: 48px;
-$h1-line-height: 68px;
+$h1-font-size: 45px;
+$h1-line-height: 63px;
 $subheader-font-family: "Roboto", sans-serif !default;
+$subheader-font-size: 22px;
+$h2-font-family: "Fjalla One", sans-serif !default;
 $h2-font-size: 24px;
-$h2-line-height: 32px;
+$h3-font-family: "Fjalla One", sans-serif !default;
+$h3-font-size: 18px;
+
 
 $spacing-unit:     30px !default;
 
@@ -21,7 +25,7 @@ $accent-color:     #1539CF !default;
 
 $grey-color:       #E9E9E9 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark:  #808080 !default;
 
 $lightblue-color: #B8C5F9;
 

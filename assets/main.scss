@@ -4,7 +4,8 @@
   "components/config",
   "components/layout",
   "components/base",
-  "components/navigation"
+  "components/navigation",
+  "components/typography"
 ;
 
 
@@ -77,6 +78,20 @@
     z-index: -1000;
 }
 
+.hero {
+  position: absolute;
+  top: 60%;
+
+
+  h1 {
+      font-family: "Fjalla One";
+      font-size: 80px;
+      color: $brand-color;
+      margin-bottom: 0;
+  }
+}
+
+
 .container {
   width: 100%;
   padding: 100px 0;
@@ -111,34 +126,6 @@
   }
 }
 
-.hero {
-  position: relative;
-  top: 60vh;
-  text-align: center;
-  color: #fff;
-  -ms-transform: translate(0,-50%); /* IE 9 */
-    -webkit-transform: translate(0,-50%); /* Safari */
-    transform: translate(0,-50%);
-
-  @media only screen and (min-width: 768px) {
-    left: -10vw;
-    text-align: left;
-    width: 75%;
-  }
-
-  h1 {
-      font-family: "Fjalla One";
-      font-size: 80px;
-      color: $brand-color;
-      margin-bottom: 0;
-  }
-  p {
-      font-family: "Roboto";
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 36px;
-  }
-}
 .emphasis {
   font-weight: 400;
   // text-decoration: underline;
@@ -229,11 +216,17 @@ a.active {
 .post-title {
   font-family: $header-font-family;
   font-size: $h1-font-size;
-  line-height: $h1-line-height;
+
 
   @include media-query($on-palm) {
     font-size: 36px;
   }
+}
+
+.post-subtitle {
+  font-family: $subheader-font-family;
+  font-size: $subheader-font-size;
+
 }
 
 .time {
