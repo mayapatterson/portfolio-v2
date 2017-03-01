@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Enhancing Trunk Club's user engagement with Pinterest
-image_path: /images/pinterestMobile.JPG
+image_path: /images/pinterestMobile.jpg
 preview: How we increased member conversion by building an experience for members to share their style aspirations.
 time: 3 min read
 ---
 
-![pinterestHero](/images/pinterestHero.JPG)
+![pinterestHero](/images/pinterestHero.jpg)
 
 ## Project background
 
@@ -44,7 +44,7 @@ From this information we drafted a simple HMW statement:
 
 Pinterest's API was pretty straight forward, so we didn't need to focus our design efforts too much on the first sign up experience. Instead, we combed through Jason's hackday flow and highlight usability opportunities to create a more engaging experience.
 
-![pinterestFlow](/images/pinterestFlow.JPG)
+![pinterestFlow](/images/pinterestFlow.jpg)
 
 
 
@@ -54,7 +54,7 @@ There were a few places the Pinterest integration could live. Most obviously, th
 
 We explored different entry points for the feature. We also explored how we might make the Pinterest feature more discoverable.
 
-![pinterestSketch](/images/pinterestSketch.JPG)
+![pinterestSketch](/images/pinterestSketch.jpg)
 
 We hallway tested our explorations to test whether our designs were intuitive. The experience that felt most natural was adding a Pinterest CTA (call-to-action) to our messaging compose bar. We knew this would push the development constraints, so I hosted a cross-platform presentation where I demonstrated the possible solutions for our feature.
 
@@ -66,11 +66,11 @@ The team agreed that adding the feature to our compose bar felt like the most na
 
 With Jimmy's help, we iterated through final mock-ups of the cross-platform experience.
 
-![pinterestBoards](/images/pinterestBoards.JPG)
+![pinterestBoards](/images/pinterestBoards.jpg)
 
-![pinterestPins](/images/pinterestPins.JPG)
+![pinterestPins](/images/pinterestPins.jpg)
 
-![pinterestMobile](/images/pinterestMobile.JPG)
+![pinterestMobile](/images/pinterestMobile.jpg)
 
 
 
