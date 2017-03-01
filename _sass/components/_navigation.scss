@@ -29,23 +29,22 @@ nav {
   z-index: 10000;
 }
 
+.site-title {
+  font-family: $header-font-family;
+}
+
  .menu {
    width: 100%;
    position: relative;
-   box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-   background:$accent-color;
+   box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
+   background: none;
    @extend %clearfix;
 
    ul {
      display: inline-block;
      margin: 0;
      float: right;
-   }
-
-   a.site-title {
-     display: inline-block;
-     float: left;
-     padding: 0 50px;
+     padding: 10px 50px;
    }
 
    li {
@@ -62,12 +61,19 @@ nav {
    a {
      color: $lightblue-color;
      font-size: 18px;
-     font-weight: 400;
-     transition: font-size linear 0.15s;
+     font-weight: 300;
+     transition: color linear 0.15s;
    }
 
    a:hover {
-     font-size: 22px;
+     color: $accent-color;
+   }
+
+   a.site-title {
+     display: inline-block;
+     float: left;
+     padding: 10px 50px;
+     font-size: 20px;
    }
 
    @include media-query($on-palm) {
@@ -83,7 +89,7 @@ nav {
      a.site-title {
        display: inline-block;
        float: left;
-       padding: 0 20px;
+       padding: 10px 30px;
      }
 
      ul.active {
@@ -97,7 +103,7 @@ nav {
        left: 0px;
        padding: 10px 18px;
        box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
-       background: $accent-color;
+       background: #ffffff;
      }
 
      li {
@@ -108,8 +114,10 @@ nav {
 
      .toggle-nav {
        display: inline;
+       font-weight: 300;
+       font-size: 18px;
        float: right;
-       padding: 0 20px;
+       padding: 10px 30px;
      }
    }
  }
@@ -117,7 +125,9 @@ nav {
 
 .toggle-nav:hover, .toggle-nav.active {
    text-decoration:none;
-   color:#66a992;
+   font-weight: 300;
+   font-size: 18px;
+   color: $brand-color;
 }
 
 .site-title {
