@@ -17,7 +17,7 @@ When users visit Trunkclub.com they want to receive clothes and styling advice. 
 
 ## Problem
 
-when new users sign up for Trunk Club, they are connected with a personal stylist who will send them a trunk of clothes based on their needs. Over 50% of new Trunk Club users weren't being connected with their stylist. From a design and technical perspective, the onboarding experience was outdated, inconsistent between men and women, and didn't reflect our brand. From a technical perspective, the codebase was outdated making it difficult for the team to iterate and test new concepts.
+When new users sign up for Trunk Club, they are connected with a personal stylist who will send them a trunk of clothes based on their needs. Over 50% of new Trunk Club users weren't being connected with their stylist. From a design and technical perspective, the onboarding experience was outdated, inconsistent between men and women, and didn't reflect our brand. From a technical perspective, the codebase was outdated making it difficult for the team to iterate and test new concepts.
 
 A strong onboarding experience proved necessary to Trunk Club's success as a growing business and our user's happiness.
 
@@ -33,7 +33,7 @@ I served as design lead on a team of front and back-end developers, two PMs, and
 
 ## Project scope
 
-Although the onboarding process doesn't end until a user's first purchase, the scope of this work focused on optimizing the experience of the sign-up process. The new experience would be implemented across all platforms (mobile web, desktop, iOS, and Android), but we focused on web first due to the large percentage of traffic on those platforms.
+Although the onboarding process doesn't end until a user's first purchase, the scope of this work focused on optimizing the experience of the sign-up process. The new experience would be implemented across all platforms (mobile web, desktop, iOS, and Android), but we focused on the web because of the large percentage of traffic on that platform.
 
 
 ## Important metrics
@@ -61,7 +61,7 @@ We began by hosting user research sessions to understand how our users felt abou
 - Our branding and visual assets turned off our target audience
 
 
-> our goal was to create an onboarding process that resulted in a nautral handoff to a member's assigned stylist.
+> Our goal was to create an onboarding process that resulted in a natural handoff to a member's assigned stylist.
 
 
 
@@ -82,7 +82,7 @@ Because we wanted to rapidly test our near term explorations I jumped into Sketc
 
 ![neartermMocks](/images/neartermMocks.png)
 
-I explored asking our user's for their names upfront to make the flow feel more personalized.
+I explored asking our user's for their names at the beginning of the flow to make the experience feel more personalized.
 
 ![neartermName](/images/neartermName.png)
 
@@ -90,7 +90,7 @@ We also knew our current women's style questions were majorly off brand and hear
 
 ![neartermStyle](/images/neartermStyle.png)
 
-Other explorations included questions about clothing budgets, the ability to opt out of sizing questions (arguably the most sensitive and dense portion of our sign-up flow), and a reduced account creation page that didn't ask new users for sensitive information like phone number.
+Other explorations included questions about clothing budgets, the ability to opt out of sizing questions (arguably the most sensitive and dense portion of our sign-up flow), and a reduced account creation page that didn't ask new users for sensitive information like their phone number.
 
 ![neartermOther](/images/neartermOther.png)
 
@@ -112,7 +112,7 @@ After testing the near-term design with participants, we gained several insights
 
 ## Exploratory Ideation
 
-After validating some of our assumptions with the near-term concept, we decided we weren't sold on the UI and overall flow. We removed the constraint that was a step by step survey-like signup flow — a UI we always used for our sign-up experience. Maybe we could address our user's lack of trust and understanding of their stylist by using a more provocative solution.
+After validating some of our assumptions with the near-term concept, we decided we weren't sold on the UI and overall flow. We removed the constraint that was a step by step survey-like signup flow — a UI we always used for our sign-up experience. Maybe we could address our user's lack of trust by using a more provocative solution.
 
 
 ### Divergent Thinking
@@ -143,16 +143,16 @@ Finally, using Slack's prototype for their bot as inspiration, I hacked together
 
 
 
-I wrote about the process of designing and testing this experience [here](https://medium.com/unpacking-trunk-club/trunkbot-or-not-f9443e8f44b5#.xcamb2p9z) but in short this is what we learned:
+I wrote about the process of designing and testing this experience [here](https://medium.com/unpacking-trunk-club/trunkbot-or-not-f9443e8f44b5#.xcamb2p9z) but in short, this is what we learned:
 
-*...the bot onboarding felt like it required too much work [for our participants], when in reality it took half the time our normal onboarding takes. Participants gave feedback that messaging with a bot wasn’t intuitive, which caused them to feel overwhelmed. They expressed desire to fill out their preferences through a more traditional survey.*
+> ...the bot onboarding felt like it required too much work [for our participants] when in reality it took half the time our normal onboarding takes. Participants gave feedback that messaging with a bot wasn’t intuitive, which caused them to feel overwhelmed. They expressed the desire to fill out their preferences through a more traditional survey.
 
 
 ### Takeaways
 
 Although our Trunkbot didn't perform so well, we gained a few valuable insights:
 
-- **Provide a narrative** with a clear finishline to explain why Trunk Club needs this information
+- **Provide a narrative** with a clear finish line to explain why Trunk Club needs this information
 - **Optimize the UI** for our audience who aren't wowed by tech trends
 - **Enhance the fun stuff** by allowing users to tell us more about their style in engaging ways
 - **Don't make the flow too short** as we’ve seen a loss of trust and understanding in all of our user tests when we try to shorten the experience
@@ -164,9 +164,9 @@ After pushing the limits of our sign-up flow UI. we decided to return to a more 
 
 I challenged myself to use Framer as the prototyping tool of choice. This was a new tool for our team and one I desperately wanted to learn. The designs focused on setting expectations through copy, visual queues, and a little animation. Here's what we tested:
 
-http://share.framerjs.com/6hpshdj725ca/
+[Women's Prototype](http://share.framerjs.com/6hpshdj725ca/)
 
-http://share.framerjs.com/o6be17qm196q/
+[Men's Prototype](http://share.framerjs.com/o6be17qm196q/)
 
 
 
@@ -175,11 +175,11 @@ http://share.framerjs.com/o6be17qm196q/
 
 ### A success!
 
-Overall, a narrative-focused onboarding was very well-received by our participants. The design set expectations early on for users, which drastically decreased confusion and increased delight at the end of the sign up process. Here's a few quotes from our participants:
+Overall, a narrative-focused onboarding was very well-received by our participants. The design set expectations early on for users, which drastically decreased confusion and increased delight at the end of the sign-up process. Here are a few quotes from our participants:
 
 > "This is pretty cool, it's telling me about the broad categories that I like. You also get the option to skip, which is pretty cool…I would expect to see this"
 >
-> "This is actually better than what I was expecting. It might overwhelming if you break it down too much on this first step"
+> "This is actually better than what I was expecting. It might be overwhelming if you break it down too much on this first step"
 >
 > “Elegant. Simple. Very straightforward and the design is excellent.”
 
@@ -199,7 +199,7 @@ After launching our men's and women's flow, we quickly received results that our
 
 We eventually rolled out our women's onboarding after minorly increasing our visitor-lead conversion. However, our men's was still suffering. We ended up rolling back certain design improvements in an effort to get this experience up to parity.
 
-After exhausting all design improvement, our development team buckeled down to really understand where our experience was failing. This was a long and tedious process, but guess what we found...
+After exhausting all design improvement, our development team buckled down to really understand where our experience was failing. This was a long and tedious process, but guess what we found...
 
 
 ## WE WON!!
@@ -219,6 +219,6 @@ Because our team took a risk and rebuilt our onboarding application, we are now 
 
 Our team now focuses on iterating and testing new questions we believe optimize our customer's experience. Recently, we added a new question to the flow that asks our new women user's for their clothing budget. That one question has **increased our member conversion by 23%**!
 
-We've learned that adding (relevant) questions to our onboarding process is a win-win for TC and our users. When our sign-up process is too short our user's don't trust that we can provide them with good service. By using micro-copy, fine tuned questions, and delightful visuals, we've enhanced the overall user experience and significantly improved Trunk Club's conversion rates.
+We've learned that adding (relevant) questions to our onboarding process is a win-win for TC and our users. When our sign-up process is too short our user's don't trust that we can provide them with good service. By using contextual micro-copy, finely tuned questions, and delightful visuals, we've enhanced the overall user experience and significantly improved Trunk Club's conversion rates.
 
 Here's to better onboardings for all!
