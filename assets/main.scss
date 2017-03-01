@@ -56,7 +56,6 @@ body {
 }
 
 .button {
-  //background-color: $accent-color;
   font-family: $base-font-family;
   font-size: $small-font-size;
   border: 2px solid $accent-color;
@@ -186,6 +185,12 @@ a.active {
   }
 }
 
+.closed-case-studies {
+  margin-top: 20px;
+  padding-bottom: 80px;
+  @extend %clearfix;
+}
+
 
 .study-details {
   @include col(3,8);
@@ -215,6 +220,12 @@ a.active {
 .study p {
   padding-left: 10px;
   padding-bottom: 30px;
+}
+
+.coming-soon {
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+  color: $grey-color-dark;
 }
 
 .post-title {

@@ -2,42 +2,46 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <div class="footer-col-wrapper footer-about">
+      <h2 class="footer-heading">So who am I?</h2>
+      <p class="footer-col-3">
+        I'm a midwestern native infatuated with city living. Currently, I'm designing products in Chicago for Trunk Club where we're redefining the retail industry.
+      </p>
+    </div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
+          <li class="footer-list-header">Find me</li>
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+          {% if site.medium_username %}
+          <li>
+            {% include icon-medium.html username=site.medium_username %}
+          </li>
+          {% endif %}
+          {% if site.email %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% endif %}
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+      <div class="footer-col footer-col-2">
+        <ul class="interviews-list">
+          <li class="footer-list-header">Interviews and publications</li>
+          <li><a href="http://revisionpath.com/maya-patterson/">Revision Path</a></li>
+          <li><a href="https://blavity.com/5-reasons-black-people-and-ux-belong-together">Blavity</a></li>
+          <li><a href="https://offkilter.co/2016/11/09/a-designer-conversation-with-maya-patterson/">Off Kilter</a></li>
+          <li><a href="http://www.stitcher.com/podcast/the-black-girl-report/e/09-tech-time-with-maya-patterson-49047593">Black Girl Report</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3 footer-description">
+        <p>  &copy; {{ site.description | escape }}</p>
       </div>
     </div>
 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Redesigning Trunk Club's Onboarding Experience
-image_path: /images/casestudyOnboarding.png
+image_path: /images/onboardingAsset.JPG
 preview: How we improved Trunk Club's user experience for first time customers and increased conversion through a sign-up redesign.
-time: 8 min read
+time: 7 min read
 ---
 
 
