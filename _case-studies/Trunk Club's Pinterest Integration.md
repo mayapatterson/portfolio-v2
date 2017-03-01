@@ -44,7 +44,7 @@ From this information we drafted a simple HMW statement:
 
 Pinterest's API was pretty straight forward, so we didn't need to focus our design efforts too much on the first sign up experience. Instead, we combed through Jason's hackday flow and highlight usability opportunities to create a more engaging experience.
 
-![pinterestFlow](/images/pinterestFlow.jpg)
+![pinterestFlow](/images/pinterestFlow.png)
 
 
 
@@ -54,7 +54,7 @@ There were a few places the Pinterest integration could live. Most obviously, th
 
 We explored different entry points for the feature. We also explored how we might make the Pinterest feature more discoverable.
 
-![pinterestSketch](/images/pinterestSketch.jpg)
+![pinterestSketch](/images/pinterestSketch.png)
 
 We hallway tested our explorations to test whether our designs were intuitive. The experience that felt most natural was adding a Pinterest CTA (call-to-action) to our messaging compose bar. We knew this would push the development constraints, so I hosted a cross-platform presentation where I demonstrated the possible solutions for our feature.
 
