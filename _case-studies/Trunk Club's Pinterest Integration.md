@@ -10,7 +10,7 @@ time: 3 min read
 
 ## Project background
 
-This feature came from unique beginnings. One of our backend engineers (sup, Jason 😎) took the initative to build a Pinterest integration within our Trunk Club apps during a **hackday project**. We predicted that allowing members to share their Pinterest boards with their stylist would increase engagement and potentially conversion metrics. However, until Jason gave this feature legs, we were having trouble prioritizing the needed dev and design attention to take this product to production.
+This feature came from unique beginnings. One of our backend engineers (sup, Jason 😎) took the initiative to build a Pinterest integration within our Trunk Club apps during a **hack day project**. We predicted that allowing members to share their Pinterest boards with their stylist would increase engagement and potentially conversion metrics. However, until Jason gave this feature legs, we were having trouble prioritizing the needed dev and design attention to take this product to production.
 
 ## My role
 
@@ -18,9 +18,9 @@ I acted as design lead and partnered with our, then, new design intern (hey, Jim
 
 ## Constraints and goals
 
-Because the feature was technically wired up and funtionctioning, our main goal was to capture the value prop for our members, and design a flow that would support our member's goal of sharing their style aspirations.
+Because the feature was technically wired up and functioning, our main goal was to capture the value prop for our member, and design a flow that would support our member's goal of sharing their style aspirations.
 
- We wanted to design and build fast since this project was one of several major initiatives, but we needed to do our due-diligence in creating a delightful experience for Trunk Club members.
+ We wanted to design and build fast since this project was one of the several major initiatives on our plates, but we needed to do our due-diligence in creating a delightful experience for Trunk Club members.
 
 ![pinterestSignUp](/images/pinterestSignUp.png)
 
@@ -30,7 +30,7 @@ Because the feature was technically wired up and funtionctioning, our main goal 
 
 The core of Trunk Club's digital experience happens through a messaging platform. When a member signs up they are paired with a stylist. From there members and stylists message back and forth about the member's style and wardrobe needs.
 
-With the help of our PMs we were able to sort through real member conversations to find examples of member's sharing images from pinterest or other sources of inspiration. We found that member's were taking the initiative to share links to their Pinterest boards with their stylist.
+With the help of our PMs, we were able to sort through real member conversations to find examples of member's sharing images from Pinterest or other sources of inspiration. We found that member's were taking the initiative to share links to their Pinterest boards with their stylist.
 
 From this information we drafted a simple HMW statement:
 
@@ -42,7 +42,7 @@ From this information we drafted a simple HMW statement:
 
 ### Cleaning up the flow
 
-Pinterest's API was pretty straight forward, so we didn't need to focus our design efforts too much on the first sign up experience. Instead, we combed through Jason's hackday flow and highlight usability opportunities to create a more engaging experience.
+Pinterest's API was pretty straight forward, so we didn't need to focus our design efforts too much on the first sign up experience. Instead, we combed through Jason's hack day flow and highlight usability opportunities to create a more engaging experience.
 
 ![pinterestFlow](/images/pinterestFlow.png)
 
