@@ -206,16 +206,12 @@ After exhausting all design improvement, our development team buckled down to re
 
 …and I mean big time. Zach discovered that our analytics tools were misinterpreting our results. Our men's onboarding increased conversion by **over 20%**. Our new experiences had been winning, and they had been for a while.
 
-[insert mocks of desktop]
-
 There's no way to know how much our women's design performed since we fully rolled it out before discovering this error. However, we all agree that it is highly likely that it increased conversion at a similar rate.
 
 
 ### Where we are now
 
 Because our team took a risk and rebuilt our onboarding application, we are now able to tweak, add, and test new questions to our onboarding flows. Furthermore, our iOS flow is slotted to launch shortly.
-
-[insert iOS mocks]
 
 Our team now focuses on iterating and testing new questions we believe optimize our customer's experience. Recently, we added a new question to the flow that asks our new women user's for their clothing budget. That one question has **increased our member conversion by 23%**!
 
