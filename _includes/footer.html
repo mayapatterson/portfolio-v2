@@ -5,7 +5,7 @@
     <div class="footer-col-wrapper footer-about">
       <h2 class="footer-heading">So who am I?</h2>
       <p class="footer-col-3">
-        I'm a midwestern native infatuated with city living. Currently, I'm designing products in Chicago for Trunk Club where we're redefining the retail industry.
+        I'm a midwestern native infatuated with city living. Currently, I'm designing products in the Bay Area for Facebook.
       </p>
     </div>
 
@@ -23,6 +23,11 @@
             {% include icon-medium.html username=site.medium_username %}
           </li>
           {% endif %}
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username %}
+          </li>
+          {% endif %}
           {% if site.email %}
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {% endif %}
@@ -32,10 +37,11 @@
       <div class="footer-col footer-col-2">
         <ul class="interviews-list">
           <li class="footer-list-header">Interviews and publications</li>
-          <li><a href="http://revisionpath.com/maya-patterson/">Revision Path</a></li>
-          <li><a href="https://blavity.com/5-reasons-black-people-and-ux-belong-together">Blavity</a></li>
-          <li><a href="https://offkilter.co/2016/11/09/a-designer-conversation-with-maya-patterson/">Off Kilter</a></li>
-          <li><a href="http://www.stitcher.com/podcast/the-black-girl-report/e/09-tech-time-with-maya-patterson-49047593">Black Girl Report</a></li>
+          <li><a href="http://revisionpath.com/maya-patterson/" target="_blank">Revision Path</a></li>
+          <li><a href="https://blavity.com/5-reasons-black-people-and-ux-belong-together" target="_blank">Blavity</a></li>
+          <li><a href="https://offkilter.co/2016/11/09/a-designer-conversation-with-maya-patterson/" target="_blank">Off Kilter</a></li>
+          <li><a href="https://soundcloud.com/blackgirlreport/mayapatterson" target="_blank">Black Girl Report</a></li>
+          <li><a href="http://bureauofdigital.com/the-bureau-briefing-ux-next-generation" target="_blank">The Bureau Briefing</a></li>
         </ul>
 
       </div>
